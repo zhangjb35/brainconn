@@ -113,7 +113,8 @@ brainconn3D <- function(atlas=NULL,
                  z = data$z.mni*d.factor,
                  color= ~node.color,
                  name = data$ROI.Name,
-                 type = "scatter3d")
+                 type = "scatter3d",
+                 mode = "markers")
   } else {
     p <- plot_ly(data, x = data$x.mni*d.factor,
                  y = data$y.mni*d.factor,
